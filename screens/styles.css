@@ -1,0 +1,770 @@
+/*<!-- Silver Version, last changed: 7 July, 2004 -->*/
+/* general appearance */
+/* See also Web options BODYPARAM */
+/* Stylesheet to use for dynamic Web pages */
+/* is set by Web option STYLESHEET */
+
+/* COLOR SCHEME (use find & replace to swap colors */
+/* very light blue: EBF5FC */
+/* light blue: B7C9F9 */
+/* medium blue: 3B6EE0 */
+/* dark blue: 0132A7 */
+/* very dark blue: 162A6D */
+
+/* Section 1 */
+/*Global tag styles*/
+body { margin-left: 5px; margin-right: 5px; padding: 0; background: white; background-image: none; font-family : Arial, Helvetica, verdana ;    font-style : normal; font-weight : normal;margin-top:3px; }
+
+td { font-family : Arial, Helvetica, verdana ;   font-style : normal; font-weight : normal;   }
+
+h1 {font-size:34px;color:#000000;margin-top:30px; border-bottom:2px solid #7F7FB2;margin-bottom:0px; padding:0px;line-height:28px;}
+
+h2 { font-size : x-small }
+
+h4 {font-size:80%}
+
+.nomargin {margin-left:7px;}
+
+/*traditional link colors are suggested for better usability */
+a:link {   color: #418FBF;  text-decoration:none;  }
+a:active {  color: #418FBF; text-decoration:none;  }
+a:visited {  color: #418FBF;  text-decoration:none;  } 
+a:hover  {  color: #F2911C; text-decoration:underline;  } 
+
+/*INPUT BOXES*/
+
+select {font-family : Arial, Helvetica, verdana ;  font-size :75% ;margin:0px;padding:0px;   }
+
+/* Section 2 */
+/* named styles in alphabetical order */
+
+/* This appears in the searchtool */
+
+.availLimMessage {font-weight:bold;font-size:90%;color:#000000;display:block;}
+
+/* classes for bib display */
+/* see also Web options TABLEPARAM_BIB... */
+
+.bibDetail { color:#418FBF; font-size:88%; border: none; margin:0 0 0 0px;  }
+
+.bibHoldings { border: 2px solid #3B6EE0; }
+
+.bibHoldingsEntry { }
+
+.bibHoldingsLabel { }
+
+.bibHolds { border: 0px solid #3B6EE0; }
+
+.bibHoldsEntry { border: 1px solid #3B6EE0; }
+
+.bibInfo {margin-left:0px;padding:0px;vertical-align:top;text-align:left; }
+
+.bibInfoData {font-size:70%;background:#ebebeb;background-image: none; padding:3px; }
+.bibInfoData a:link {font-weight:bold;color:#418FBF;}
+.bibInfoData a:active {font-weight:bold;color:#418FBF; }
+.bibInfoData a:visited {font-weight:bold;color:#418FBF; }
+.bibInfoData a:hover {font-weight:bold;color:#F2911C; }
+
+.bibInfoEntry {}
+
+.bibInfoLabel { background: #d7d7d7; background-image: none; color:#000000;width:100px;font-size:70%;padding:5px;font-weight:bold; }
+
+.bibItems {color:#418FBF; font-size:88%; border: 5px solid #ffffff; margin:0 0 0 0px;  }
+
+.bibItemsEntry { color: #000000; background: #EBEBEB; text-align: left;font-size:95%; }
+
+ .bibItems td {background:#EBEBEB; background-image: none; }
+
+.bibItems th {background:#d7d7d7;background-image: none; }
+
+ 
+.bibItems a:link {   color: #418FBF;  text-decoration:none;  }
+.bibItems  a:active{  color: #418FBF; text-decoration:none;  }
+.bibItems  a:visited {  color: #418FBF;  text-decoration:none;  } 
+.bibItems  a:hover  {  color: #F2911C; text-decoration:underline;  } 
+
+.bibItemsHeader { background: #d7d7d7; color: #000;font-size:90%; font-weight: bold; text-align: left; }
+
+.bibLicense { }
+
+.bibLicenseEntry { color: #000000; background: #B7C9F9; text-align: left; }
+
+.bibLicenseHeader { color: #FFFFFF;   font-weight: bold; text-align: left; }
+
+.bibLinks { border: 1px solid #3B6EE0; }
+
+.bibOrder { border: 1px solid #3B6EE0; }
+
+.bibOrderEntry { }
+
+.bibPager {font-size:75%;font-weight:bolder; text-align: center; border-top:1px #444444;  }
+
+.bibResource { }
+
+.bibResourceBrief { }
+
+.bibResourceCaption { }
+
+.bibResourceEntry td { font-weight: bold; }
+
+.bibResourceHeader { }
+
+.bibResourceTable, .browseResourceTable { margin-top: 5px; border:0px;  }
+
+.bibResourceTableEntry { font-size: 85%; font-weight: normal; padding-left: 1px; padding-bottom: 5px; background:#ebebeb; }
+
+.bibResourceTableHeader, .browseResourceTableHeader { color:#fff;font-weight: bold; font-size: 85%; background: #00437f; padding: 1px; text-align: center; border-bottom:1px solid #7e4a1f; } 
+
+
+.bibScreen {display:block; }
+ 
+.bibSearchtool { display:block; background: #ffffff; text-align:left; padding: 1px;margin-left: 0px; font-size : 75% }
+
+.bibSearchtool select { font-size:100%;  }
+.bibSearchtool   input {font-size:100%;}
+ 
+.bibThumbnails {  }
+
+.bibTOC { }
+
+.homeblacktable {background:#000000;background-image: none; font-size:60%;font-color:white;padding-left:10px;font-weight:normal; }
+
+.homeblacktable a:link {   color: #ffffff;  text-decoration:none;font-weight:normal;   }
+.homeblacktable a:active {  color: #ffffff; text-decoration:none; font-weight:normal;  }
+.homeblacktable a:visited {  color: #ffffff;  text-decoration:none; font-weight:normal;  } 
+.homeblacktable a:hover  {  color: #F2911C; text-decoration:underline;font-weight:normal;  } 
+
+
+.briefCitRow { color: #000000; background: #EBEBEB; font-family: Arial, Helvetica, verdana; font-weight: normal; }
+
+/* classes for browse displays */
+/* See also Web options BROWSE_HEADERS, TABLEPARAM_BROWSE..., TABLEPARAM_BRIEFCIT */
+.browseEntry { color: #000000; background: #EBEBEB; font-family: Arial, Helvetica, verdana;   font-size : 75%; }
+
+.browseEntryData { text-align: left;font-weight:normal; background:#EBEBEB;background-image: none;  }
+
+ 
+.browseEntryData a:link, a:active  { text-align: left; font-weight:normal;  }
+ .browseEntryData a:visited  { text-align: left; font-weight:normal;    }
+.browseEntryData a:hover { text-align: left; font-weight:normal;  }
+ 
+.browseEntryEntries { text-align: center; font-size : 75%; font-weight:bold;border-left:dashed 1px #000000;  }   
+
+.browseEntryMark {   background:#CCCCCC;background-image: none; }
+
+.browseEntryMedia { vertical-align: middle; }
+
+.browseEntryNum {  text-align: center ;background:#CCCCCC;background-image: none; border-right:dashed 1px #000000;   }
+
+.browseEntryRelevance {font-size : 75%; }
+
+.browseEntryYear {text-align: center;font-weight:bold;font-size : 75%; }
+
+.browseHeader { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;  vertical-align: middle; font-size :80%;  }
+
+.browseHeaderData { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;   vertical-align: middle; font-size : 80% ;text-align:left;border-top: dashed 1px #444444; }
+
+.browseHeaderEntries { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;   vertical-align: middle;font-size : 80%  ; width:90px; border-top: dashed 1px #444444; border-left: dashed 1px #444444; }
+
+.browseHeaderMark { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;  vertical-align: middle; font-size : 80%  ;border-top: dashed 1px #444444; }
+
+.browseHeaderMedia { color: #000000; background:#D7D7D7; font-family: Arial, Helvetica, verdana ;  vertical-align: middle; font-size : 80%  ;border-top: dashed 1px #444444;  }
+
+.browseHeaderNum { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;   vertical-align: middle; font-size : 80%  ;border-right: dashed 1px #444444;border-top: dashed 1px #444444;  }
+
+.browseHeaderRelevance { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;   vertical-align: middle; font-size : 80%  ; }
+
+.browseHeaderYear { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ;   vertical-align: middle; font-size : 80%  ; border-top: dashed 1px #444444; }
+
+.browseList { }
+
+.browsePager {padding-right:30px;font-size:90%;font-weight:bold;padding-bottom:0px;text-align:right;}
+.resulttitle {float:left;font-size:130%;}
+ 
+ .browsePager img {vertical-align:middle;margin-left:10px;margin-right:10px;}
+.browsePager a:link   {color:#000000; text-decoration:none;font-size:90%;margin-left:5px;margin-right:5px; }
+.browsePager a:active  { text-decoration:none;font-size:90%;margin-left:5px;margin-right:5px; }
+.browsePager a:visited {color:#418FBF;font-size:90%;margin-left:5px;margin-right:5px;}
+.browsePager a:hover {color:#F2911C;text-decoration:underline;font-size:90%;}
+.browsePager strong {color:#418FBF;text-decoration:underline;font-size:90%;margin-left:5px;margin-right:5px;   }
+
+.browseResourceTable { }
+
+.browseResourceTableEntry { font-family: Arial, Helvetica, verdana ; color: #000000;  text-align: center; font-size : xx-small ; }
+
+.browseResourceTableHeader { }
+
+.browseSaveJump { color: #000000; background: #D7D7D7; text-align: left; font-size : x-small; vertical-align: top }
+.browseSaveJump input {vertical-align:top;padding:0px;margin:0px;}
+
+.browseList {;border-bottom:solid 2px #444444;  }
+ 
+.browseScreen { }
+
+.browseSearchtool { margin-left: auto; margin-right: auto; padding-left: 3px; padding-right: 3px; margin-bottom: 1px;  background: #ffffff; float:left; border:solid 0px; vertical-align:bottom; font-size : 75% }
+
+.browseSearchtool input {font-family: Arial, Helvetica, verdana ; color: #000000; font-size : 95%; vertical-align:bottom;}
+
+.browseSearchtool select {font-family: Arial, Helvetica, verdana ; color: #000000; vertical-align:bottom;}
+    
+.browseSearchtoolMessage { font-size: 100%; } 
+
+.browseSubEntry { color: #000000; background: #B7C9F9; font-family: Arial, Helvetica, verdana ; font-weight: normal; font-size : 90%; }
+
+.browseSubEntryData {background:#EBEBEB; background-image: none;  font-size : 90%;}
+
+ 
+.browseSubEntryData a:hover {font-weight:normal;}
+
+.browseSubEntryData strong {display:block;font-style:italic;margin-left:24px;font-size:90%;font-weight:normal;padding-top:5px;}
+
+/* Is an Entries column ever drawn in Extended browse? */
+.browseSubEntryEntries {background:#EBEBEB; background-image: none;  }
+
+.browseSubEntryMedia { background:#EBEBEB; background-image: none; }
+
+.browseSubEntryRelevance {background:#EBEBEB; background-image: none;  }
+
+.browseSubEntryYear {background:#EBEBEB; background-image: none;  }
+
+.browseSuperEntry { color: #000000; background: #D7D7D7; font-family: Arial, Helvetica, verdana ; font-weight: bold; font-size:100%;  }
+
+/* This hides the "Cancel All Holds" button wherever it would appear */
+/* Sadly, selecting elements based on attributes is not supported in Internet Explorer yet */
+img[src="/screens/pat_cancelall.gif"] { display:none; }
+
+.errormessage { font-size: x-small; color: #FF0000; }
+
+.errormessage h2 { font-size:14pt !important;}
+
+/* External Patron Authentication product style */
+.extpat div { line-height: 166%; width: 90%; background: #EBF5FC; border: 2px solid #3B6EE0; padding: 3px; margin-left: auto; margin-right: auto; text-align: right; }
+
+/* External Patron Authentication product style */
+.extpat strong { display: block; text-align: left; }
+
+
+.ftlistHeader { }
+
+.holdingsDivider { border: 2px solid #B7C9F9; margin: -3px; }
+
+/* External Patron Authentication product style */
+.libpat div { line-height: 166%; width: 90%; background: #EBF5FC; border: 2px solid #3B6EE0; padding: 3px; margin-left: auto; margin-right: auto; text-align: right; }
+
+/* External Patron Authentication product style */
+.libpat strong { display: block; text-align: left; }
+
+/* External Patron Authentication product styles */
+.loginarea { }
+
+/* Limit/Sort style */
+.limitSearchTypeText { color:#000000; font-family: Arial, Helvetica, verdana ; font-size : 90%; }
+
+.limitSearchTypeIndex { color:#000000; font-family: Arial, Helvetica, verdana ; font-weight: bold; font-size : 90%; }
+
+.limitSearchTerm { color:#ff0000; font-family: Arial, Helvetica, verdana ; font-weight: bold; font-size : 90%; }
+
+.limitEntriesFoundNum { color:#000000; font-family: Arial, Helvetica, verdana ; font-weight: bold; font-size : 90%; font-style : italic }
+
+.limitEntriesFoundText { color:#000000; font-family: Arial, Helvetica, verdana ; font-size : 90%; font-style : italic }
+
+
+.msg { font-size: 80%; color: #FF0000; }
+
+.navigationRow { vertical-align:middle; width:100%;background:#D7D7D7;background-image: none; height:52px; padding-left:5px; padding-top:5px; padding-bottom:0px; margin-bottom:5px; font-size:75%;text-align:left;  }
+
+.navigationRow select { margin-top:2px; vertical-align:top;height:20px;font-size:100%;}
+ 
+.navSearchHistory {  display: inline; font-size:80%; margin:0px;}
+
+form {margin:0px;padding:0px;}
+ 
+ 
+.navigationRow form {padding:0px;margin:0px;}
+ 
+
+
+
+
+
+
+/* classes for patron record display */
+/* see also Web options TABLEPARAM_PATDISP, TABLEPARAM_PATFUNC, */
+/* and the various BUT_PAT_ graphics options. */
+
+.patDisplay { background: #ebebeb; }
+
+.patDisplayFunc { background: #ebebeb;}
+
+.patDisplayInfo { background: #ebebeb; }
+
+.patFunc { border-spacing: 0; }
+
+#PatFuncTest form { display: inline }
+
+.patFunc td { border-bottom: 1px dashed #d7d7d7; padding: 5px; }
+
+.patFuncBookDate {  background: #ebebeb;}
+
+.patFuncBtns { color: #000000; background: #ebebeb; font-family: Arial, Helvetica, verdana ;  }
+
+.patFuncCallNo {  background: #ebebeb;}
+
+.patFuncCancel { background: #ebebeb; }
+
+.patFuncDate { background: #ebebeb; }
+
+.patFuncEntry { color: #000000; background: #B7C9F9; font-family: Arial, Helvetica, verdana ; font-weight: normal;font-size :80%  }
+
+.on_ice { font-size :80%  }
+
+/* is this really in use? */
+.patFuncFinesDetail { background: #ebebeb; }
+
+.patFuncFinesDetailAmt { background: #ebebeb; }
+
+.patFuncFinesDetailDate { background: #ebebeb; }
+
+.patFuncFinesDetailDateLabel { background: #ebebeb; }
+
+.patFuncFinesDetailType { background: #ebebeb; }
+
+.patFuncFinesEntryDetail { background: #ebebeb; }
+
+.patFuncFinesDetailAmt { background: #ebebeb; }
+
+.patFuncFinesDetailDate { background: #ebebeb; }
+
+.patFuncFinesDetailDateLabel { background: #ebebeb; }
+
+.patFuncFinesDetailType { background: #ebebeb; }
+
+.patFuncFinesEntryDetail { background: #ebebeb; }
+
+.patFuncFinesEntryTitle { color: #000000; background: #ebebeb; font-family: Arial, Helvetica, verdana ; font-weight: normal;  }
+
+.patFuncFinesTotal { background: #ebebeb; }
+
+.patFuncFinesTotalAmt { font-weight: bold; }
+
+.patFuncFinesTotalLabel { }
+
+.patFuncHeaders { color: #000000;  font-family: Arial, Helvetica, verdana ; font-size :90% ;  background: #d7d7d7;}
+
+.patFuncMark { background: #d7d7d7; }
+
+.patFuncModifyPatInfo { background: #ebebeb; }
+
+.patFuncModifyPIN { background: #ebebeb; }
+
+.patFuncModifyPINExample { background: #ebebeb; }
+
+.patFuncNoEntries { background: #ebebeb;}
+
+.patFuncPickup { background: #ebebeb; }
+
+.patFuncPSrchBtn { background: #ebebeb; }
+
+.patFuncPSrchType { background: #ebebeb; }
+
+.patFuncStatus { background: #ebebeb; }
+
+.patFuncTitle {color:#000000; background: #ebebeb; font-family: Arial, Helvetica, verdana ; font-weight: bold; font-size : 100%; }
+
+.patImage { background: #ebebeb; }
+
+.patInfo { background: #ebebeb; }
+
+.relSearchLabel { }
+
+.relSearchLink { }
+
+.reserveBibs { border: 2px solid #3B6EE0; }
+
+.reserveBibs td { border-bottom: 1px solid #3B6EE0; }
+
+.reserveBibs input { background: #B7C9F9; background-image: none; }
+
+/* is this in use? */
+.resLinkBrowseMenu { text-align: center; }
+
+
+/* Resource Record display */
+.resourceBib { }
+
+.resourceBibEntry { color: #000000; background: #B7C9F9; text-align: left; }
+
+.resourceBibHeader { color: #FFFFFF;   font-weight: bold; text-align: left; }
+
+.resourceInfoData { }
+
+.resourceInfoLabel { background: #B7C9F9; font-style: italic; }
+
+.resourceLicense { }
+
+.resourceLicenseEntry { color: #000000; background: #B7C9F9; text-align: left; }
+
+.resourceLicenseHeader { color: #FFFFFF;   font-weight: bold; text-align: left; }
+
+.resourceLinkEntry { }
+
+.resourceResource { }
+
+.bibResourceSubEntry { font-style: italic; }
+
+.wbPanelCategory { font-family: Arial, Helvetica, verdana ; font-size:80%;  font-weight: bold; }
+.wbPC { font-family: Arial, Helvetica, verdana ; font-size:80%;  font-weight: bold; }
+.wbHeading { font-family: Arial, Helvetica, verdana ; font-size:80%; }
+.wbSubHeading { font-family: Arial, Helvetica, verdana ;  }
+.wbLinkDisplay { font-family: Arial, Helvetica, verdana ; color: #0132A7; font-size:80%; margin-bottom:5px; }
+
+/* is this in use? but it works! */
+
+.yourEntryWouldBeHere { font-family : Arial, Helvetica, verdana ; font-size: 90% }
+
+.yourEntryWouldBeHereData { font-family : Arial, Helvetica, verdana ; font-size: 90% }
+
+.subheader { font-family : Arial, Helvetica, verdana ;  font-size : x-small ; font-style : normal; font-weight : bold; }
+
+/* Section 3 */
+/* These styles are used by the library-customizable pages in the example set */
+A.pageNavAreaText:LINK, A.pageNavAreaText:VISITED {  font-family: Arial, Helvetica, verdana ; color: #000000; text-decoration: none; font-weight: normal;font-size:75%;   }
+
+A.pageNavAreaText:ACTIVE, A.pageNavAreaText:HOVER {  font-family: Arial, Helvetica, verdana ; color: #B7C9F9; text-decoration: none; font-weight: normal;   }
+
+A.pageNavBarButton:LINK, A.pageNavBarButton:VISITED { color: #000099; }
+
+A.pageNavBarButton:ACTIVE, A.pageNavBarButton:HOVER { color: #993399; }
+
+.availLimMessage { text-align: left; display:inline;  }
+
+.briefCitRow td {padding-left:5px;font-size: 75%;}
+
+.briefcitDetail {   }
+
+.briefcitDetail center {text-align:left;}
+
+.briefcitDetail img {text-align:left;}
+
+.briefcitStatus { }
+
+.briefcitTitle {font-size:100%;}
+.briefcitTitle a:link {font-weight:bold;color:#418FBF;}
+.briefcitTitle a:active {font-weight:bold;color:#418FBF; }
+.briefcitTitle a:visited {font-weight:bold;color:#418FBF; }
+.briefcitTitle a:hover {font-weight:bold;color:#F2911C; }
+
+/* is this really in use? */
+.button { border:0px; }
+
+/* is this really in use? */
+div#instructions { font-size: 90%; font-style: italic; }
+
+.helpNote { font-size: 90%; font-style: italic; }
+
+.InnovativeCredit {  font-family: Arial, Helvetica, verdana ; font-size: x-small; font-style: italic}
+
+.KidsOnline {  font-family: "Comic Sans MS", Arial, Helvetica, verdana ; font-weight: bold}
+
+.loggedInMessage {	font-style: italic; color: red; font-weight: bold; font-size: 80%; }
+
+/* is this really in use? */
+.navigationMenu { text-align: center; }
+
+/* should this really be in use? */
+.nowrap {white-space: nowrap; }
+
+.pageDataArea { font-family: Arial, Helvetica, verdana ; color: #000000; background: #B7C9F9; text-align: left;  }
+
+.pageDataAreaHeading { font-family: Arial, Helvetica, verdana ; color: #FFFFFF;   font-weight: bold; font-size: larger; text-align: left;  }
+
+.pageDirectoryArea { font-family: Arial, Helvetica, verdana ; color: #000000; text-align: left;  }
+
+.pageInfoArea { font-family: Arial, Helvetica, verdana ; color: #000000; background: #B7C9F9; text-align: left;  }
+
+.pageInfoAreaHeader { font-family: Arial, Helvetica, verdana ; color: #0132A7; background: #ebebeb; font-size: larger; font-weight: bolder; text-align: left;padding:5px;  }
+
+.pageMainArea { font-family: Arial, Helvetica, verdana ;  color: #000000; background: #ffffff;font-size:100%; }
+
+.pageNavArea  a:link {font-weight:normal; font-size :90%;}
+.pageNavArea  a:active {font-weight:normal; font-size :90%;}
+.pageNavArea  a:visited {font-weight:normal; font-size :90%;}
+.pageNavArea  a:hover {  font-size :90%;text-decoration:underline;}
+
+.pageMainArea ul li {color: #000000;}
+
+
+
+.pageMainArea td {vertical-align:middle;font-size :90%}
+
+.pageMainArea input, select {vertical-align: top;font-size :100%}
+
+
+/*.pageMainAreaHeader { font-family: Arial, Helvetica, verdana ;font-size:130%;color:#000000;margin-top:0px; border-bottom:2px solid #7F7FB2;margin-bottom:0px; padding:0px;line-height:28px;font-weight:bold; }*/
+.pageMainAreaHeader { font-family: Arial, Helvetica, verdana ;font-size:130%;color:#000000;margin-top:0px;margin-bottom:0px; padding:0px;line-height:28px;font-weight:bold; }
+
+
+.pageNavArea { font-family: Arial, Helvetica, verdana ; color: #FFFFFF; background: #ffffff;font-size:90%; }
+
+.pageNavArea  a:link {font-weight:normal; font-size :90%;}
+.pageNavArea  a:active {font-weight:normal; font-size :90%;}
+.pageNavArea  a:visited {font-weight:normal; font-size :90%;}
+.pageNavArea  a:hover {  font-size :90%;text-decoration:underline;}
+
+
+
+
+.pageNavAreaBorder { background: #0132A7; }
+
+.pageNavAreaText {  font-family: Arial, Helvetica, verdana ; color: #000000; text-decoration: none; font-weight: bold; background:#ebebeb;background-image: none; text-align:left;padding-left:10px;font-size:75%;border:1px solid #d7d7d7; }
+
+.pageNavBar { text-align: center; }
+
+.pageNavBarButton { font-family: Arial, Helvetica, verdana ; color: #0132A7; background: #B7C9F9; text-align: left; ; font-weight: bold; text-decoration: none; border-style: none;  }
+
+.pageSearchArea { font-family: Arial, Helvetica, verdana ; color: #000000; background: #B7C9F9; text-align: left;  } 
+
+.paymentPage { margin: 10px; }
+
+.paymentPage h2 { font-weight: bold; }
+
+.paymentPageFinestable { width: 80%; border: 2px solid #3B6EE0; }
+
+.sectionHeading { font-weight: bold; }
+
+.unpadded {margin:0px;padding:0px;  }
+
+
+/*SCOPED HOMEPAGE */
+
+.elgar {float:left;border:0px;margin-left:10px;}
+.libraryLogos {float:right;padding-bottom:5px;}
+.libraryLogos img {padding-right:5px;}
+.header { margin:0px;padding:0px; }
+
+.waitakereSpacer {width:100%;background:#3C3C1A;background-image: none; height:76px;}
+
+.headerLinks td { border-right:1px solid #444444;  }
+.headerLinks  {font-family: Arial, Helvetica, verdana ; font-size:70%;border-left: 1px solid #444444;  }
+
+.headerLink a:link   {color: #418FBF;text-align:center;font-weight:normal; padding:5px; }
+.headerLink a:active {color: #418FBF; text-align:center;font-weight:normal; padding:5px; }
+.headerLink a:visited {color: #418FBF; font-weight:normal;padding:5px; }
+.headerLink a:hover  {color: #F2911C; font-weight:normal; padding:5px; }
+
+.searchTitle {font-size:90%;color:#000000;padding-top:5px;font-weight:bold;}
+.inputTitle {font-size:80%;color:#4e4e4e; }
+
+.blueTitle {font-family: Arial, Helvetica, verdana ; font-size:80%;font-weight:bold;padding-left:20px;background-image:url(arrow.gif);background-repeat:no-repeat;background-position:left top;height:20px;}
+
+.blueTitle a:link {color:#418FBF;font-weight:bold;} 
+.blueTitle a:active {color:#418FBF;font-weight:bold;} 
+.blueTitle a:visited {color:#418FBF;font-weight:bold;} 
+.blueTitle a:hover {color:#F2911C;font-weight:bold;} 
+
+
+
+
+.whatsOn {font-family: Arial, Helvetica, verdana ;font-weight:bold;color:red; width:75%}
+
+.whatsOn a:link {font-weight:normal;margin-bottom:5px; font-size:75%;}
+
+.whatsOn a:active {font-weight:normal;margin-bottom:5px;}
+
+.whatsOn a:visited {font-weight:normal;margin-bottom:5px; font-size:75%; }
+
+.whatsOnText {font-size:70%;color:black;}
+
+.whatsOnTextLink {font-size:130%;}
+
+.goodReads {border-left:2px solid #7F7FB2;padding-left:15px;margin-top:5px;margin-top:15px; }
+
+.goodReads li {margin-left:0px;color:#418FBF;list-style-type:disc;font-size:75%;}
+
+.goodReads ul {margin-left:0px;padding-left:15px;padding-top:0px;}
+
+.goodReads a:link {font-weight:normal;font-size:100%;}
+.goodReads a:active {font-weight:normal;font-size:100%;}
+.goodReads a:visited {font-weight:normal;font-size:100%;}
+.goodReads a:hover {font-weight:normal;font-size:100%;}
+
+.footerLinks {font-family: Arial, Helvetica, verdana ; font-size:90%;font-weight:normal;padding-left:10px;height:20px;margin-top:10px;vertical-align:top;}
+
+.footerLinks a:link {color:#ffffff;font-size:90%;font-weight:normal;}
+.footerLinks a:active {font-size:90%;font-weight:normal;color:#ffffff;}
+.footerLinks a:visited  {font-size:90%;font-weight:normal;color:#ffffff;}
+.footerLinks a:hover {font-size:90%;text-decoration:underline;font-weight:normal;color:#ffffff;}
+
+.loginTable {background:#ebebeb;background-image: none; border:1px solid #d7d7d7;}
+
+.homepageText {font-family: Arial, Helvetica, verdana ; font-size:70%;font-weight:normal;}
+
+.homeLink {font-family: Arial, Helvetica, verdana ;  padding-left:20px;background-image:url(arrow.gif);background-repeat:no-repeat;background-position:left top;font-size:65%; font-weight:bold; }
+
+
+.homeLink  a:link {   color: #418FBF;  text-decoration:none;  font-weight:normal;    }
+.homeLink a:active {  color: #418FBF; text-decoration:none;font-weight:normal;  }
+.homeLink a:visited {  color: #418FBF;  text-decoration:none; font-weight:normal; } 
+.homeLink a:hover  {  color: #F2911C; text-decoration:underline; font-weight:normal; } 
+
+.homeFooterLinks {background:#ebebeb;background-image: none; font-size:60%;padding-left:10px;font-weight:normal; }
+
+.homeFooterLinks a:link {   color: #000000;  text-decoration:none;font-weight:normal;   }
+.homeFooterLinks a:active {  color: #000000; text-decoration:none; font-weight:normal;  }
+.homeFooterLinks a:visited {  color: #000000;  text-decoration:none; font-weight:normal;  } 
+.homeFooterLinks a:hover  {  color: #F2911C; text-decoration:underline;font-weight:normal;  } 
+
+.help td {font-size:75%;}
+
+.help a:link {font-weight:normal;font-size:100%;}
+.help a:active {font-weight:normal;font-size:100%;}
+.help a:visited {color: #418FBF;font-size:100%; }
+ 
+.formTitle {background:#ebebeb;background-image: none; font-weight:bold;padding:0px;}
+
+.myInfo a:link {   color: #418FBF;  text-decoration:none;  font-weight:normal;    }
+.myInfo a:active {  color: #418FBF; text-decoration:none;font-weight:normal;  }
+.myInfo a:visited {  color: #418FBF;  text-decoration:none; font-weight:normal; } 
+.myInfo a:hover  {  color: #F2911C; text-decoration:underline; font-weight:normal; } 
+.myInfo td {vertical-align:top; font-size:80%}
+
+.myInfoHeading {font-weight:bold;}
+.myInfoContent p {margin-left: 20px;margin-top: 0px;margin-bottom: 0px}
+.myInfoSearchWidget {display:inline; font-size:120%;}
+.myInfoVertBar {border-left: 1px solid #C0C0C0}
+
+
+/* Added this class for the mylist dropdown list */
+.mylistsSelect { font-size:150%; }
+
+.quicklinks {font-family: Arial, Helvetica, verdana ; font-size:80%;font-weight:bold;}
+
+.quicklinks a:link {color:#418FBF;font-weight:bold;} 
+.quicklinks a:active {color:#418FBF;font-weight:bold;} 
+.quicklinks a:visited {color:#418FBF;font-weight:bold;} 
+.quicklinks a:hover {color:#F2911C;font-weight:bold;} 
+
+/*styles for bib_display.html */
+.rateLabel {background: #bbb; color:#000000;font-size:80%;display:block;margin: 0 0 10 0px;font-weight: bold;}
+.topDiv {text-align:left}
+.limitDiv {width:60%}
+.searchTool {border:1px solid #00437F; background:#d7d7d7; padding:5px 0 5px 0;}
+#bibLeft { float:left; left: 2%; width: 12%; }
+#bibContent { float:left; left: 16%; width: 100%; }
+#bibRight { float:left; left: 88%; width: 10%; }
+.raised {background: transparent; width:90%; margin:0 auto;}
+.raised .top, .raised .bottom {display:block; background:transparent; font-size:1px;}
+.raised .b1, .raised .b2, .raised .b3, .raised .b4, .raised .b1b, .raised .b2b, .raised .b3b, .raised .b4b {display:block; overflow:hidden;}
+.raised .b1, .raised .b2, .raised .b3, .raised .b1b, .raised .b2b, .raised .b3b {height:1px;}
+.raised .b2 {background:#d7d7d7; border-left:1px solid #fff; border-right:1px solid #eee;}
+.raised .b3 {background:#d7d7d7; border-left:1px solid #fff; border-right:1px solid #ddd;}
+.raised .b4 {background:#d7d7d7; border-left:1px solid #fff; border-right:1px solid #aaa;}
+.raised .b4b {background:#d7d7d7; border-left:1px solid #eee; border-right:1px solid #999;}
+.raised .b3b {background:#d7d7d7; border-left:1px solid #ddd; border-right:1px solid #999;}
+.raised .b2b {background:#d7d7d7; border-left:1px solid #aaa; border-right:1px solid #999;}
+.raised .b1 {margin:0 5px; background:#fff;}
+.raised .b2, .raised .b2b {margin:0 3px; border-width:0 2px;}
+.raised .b3, .raised .b3b {margin:0 2px;}
+.raised .b4, .raised .b4b {height:2px; margin:0 1px;}
+.raised .b1b {margin:0 5px; background:#999;}
+.raised .tool form {margin:auto; padding:0;}
+.raised .tool {width:100%;align:left;display:block; background:#fff; font-size:75%; padding:3px;}
+.clear {clear:both; margin-bottom:5px;}
+.clear2 {clear:both;}
+#infoTable {width:75%;float:left;}
+#sidebarContent {width:15%;padding:0 0 0 0;float:left; margin: 5 0 0 0;}
+#infoOther {text-align:center; display:none; }
+#moreInfo {display:none; padding:0 3px 0 3px; }
+#moreCategories {display:none; padding:0 3px 0 3px;}
+#revandRate { text-align:center; background:#ebebeb; padding:0 0 0 0;}
+.sidecontentHeading { background:#00437f; color:#fff; font-size:80%; font-style:italic; font-weight:bold; border-bottom:1px solid #7e4a1f; width:100%; margin:0 0 3px 0;}
+.conHead {background:#162A6D; color:#fff; font-size:85%; font-style:italic; font-weight:bold; border-bottom:1px solid #FFB515; width:100%; padding:2px 0 2px 6px;}
+.booking {text-align:center; margin:0 0 5px 0;}
+#bibMenuLinks {padding: 0 5px 3px 5px; text-align:center;}
+#bibMenuLinks a {color:#162A6D;}
+
+div.bibContentBox div a {color:#00437f;text-decoration:none; font-weight:bold; outline:none; font-size:75%;}
+div.bibContentBox div a:hover {color:red;text-decoration:underline; font-weight:bold;outline:none;font-size:75%;}
+.xtop, .xbottom {display:block; background:transparent; font-size:1px;}
+.bibContentSectionDefault {width:100%;margin:0px 0 0 0px; }
+
+/* SMS styles */
+
+
+#info, #sms {
+       border:1px solid #36647b;
+       position:absolute;
+       top:250;
+       left:50; 
+       z-index:1000;
+       background:#fff;
+       padding:10px;
+       margin:10px;
+       background:#efefcf;
+}
+
+#sms .eg {
+       font-style:italic;
+       font-size:80%;
+}
+
+#info {top:500}
+
+#sms {font-size:70%}
+/* briefCIT */
+.briefcitItems table { border: 0px; margin:0 0 0 0px;}
+
+/*homepage invisible scope menu */
+
+.invisible {visibility:hidden; display:none}
+
+/*Librarything */
+
+.LTlabel {background: #bbb; color:#000000;font-size:80%;display:block; margin:0 0 0 0px;font-weight: bold;}
+.bibImageLabel {background: #bbb; color:#000000;font-size:80%;display:block; margin:0 0 0 0px;font-weight: bold;}
+.bibImage {padding:5px;}
+.widget_container_style {margin:0 0 0 0px;}
+
+/*ecommerce receipt styles */
+.receipt_name
+{
+	font-family: Arial,Helvetica,verdana;
+	font-size: 110%;
+	font-weight: bold;
+	color: #666666;
+}
+
+.receipt_footer
+{
+	font-family: Arial,Helvetica,verdana;
+	font-size: 70%;
+	border-top: 1px solid;
+}
+
+.receipt_no
+{
+	font-family: Arial,Helvetica,verdana;
+	font-size: 100%;
+	color: #990000;
+
+}
+
+/* disable pickup location label */
+.patFuncPickupLabel {
+ display:none;
+}
+
+/* disable extra labels */
+.formLabelAddition {
+ display:none;
+}
+
+/* disable freeze label*/
+.patFuncFreezeLabel{
+ display:none;
+}
+/* fines link in my info. Eliza wanted it red */
+.fineslink a:link {color:red;}
+.fineslink a:active {color:red;}
+.fineslink a:visited {color:red;}
+.fineslink a:hover {color:red;}
