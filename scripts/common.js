@@ -565,11 +565,11 @@ if (use_nosrch)
 	subkeystring = "&SUBKEY=" . thisForm.searchString;
 	}
 
-form.action = location.protocol+ "//" + location.host + pathname
+form.action = location.protocol+ "//" + "172.19.2.2:443" + pathname
 	+ "?" + nosrchstring + "=" +  thisForm.searchString
 	+ thisForm.limitString + subkeystring;
 
-window.location.href = location.protocol+ "//" + location.host + pathname
+window.location.href = location.protocol+ "//" + "172.19.2.2:443" + pathname
 	+ "?" + nosrchstring + "=" +  thisForm.searchString
 	+ thisForm.limitString + subkeystring;
 
