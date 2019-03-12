@@ -3,7 +3,7 @@
 <!-- This File Last Changed: 01 July 2008 -->
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache"><META HTTP-EQUIV="Expires" CONTENT="-1">
 <head>
-<title>PROD - ELGAR(New Zealand, consortium)                                     / All</title>
+<title>TRAIN - ELGAR Data from 05 Dec 2018                                       / All</title>
 <base target="_self"/>
 <link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
 <link rel="stylesheet" type="text/css" href="/screens/styles.css" />
@@ -20,10 +20,10 @@
 <!-- Hide the JS
     function timeout ( )
     {
-    window.location.replace ("http://www.elgar.govt.nz:80/search");  
+    window.location.replace ("/search");  
     return false;
     }
-    startTimeout(120000000, "http://www.elgar.govt.nz:80");
+    startTimeout(120000000, "");
 // -->
 </script>
 <div id="TimeoutPopup" tabindex="0" class="modal" onkeypress="refreshSession(event)">
@@ -68,19 +68,17 @@ Your session will expire automatically in <span id=TimeoutSeconds>0</span> secon
 
 	</td>
 <td valign="top" width="100%" bgcolor="#ffffff" style="border-top:0px solid #000000;border-bottom:0px solid #000000;" >
-<!--	<a href="http://www.aucklandcouncil.govt.nz">
+	<a href="http://www.aucklandcouncil.govt.nz">
 		<img src="/screens/logo_AC.jpg" hspace="0" alt="Auckland Council Home" border="0"></img>
 	</a>
--->
 </td>
 <td valign="top" width="400" style="border-top:0px solid #000000;border-bottom:0px solid #000000;border-right:0px solid #000000;"><img src="/screens/akl_header2.gif" hspace="0"  width="400" height="76" alt=""></td>
 </tr>
 </table>
 
-<table width=100% border=0 cellspacing=0 cellpadding=0 style="margin-top:10px;border:1px solid #688d01; background-color:#163e58">
+<table width=100% border=0 cellspacing=0 cellpadding=0 style="margin-top:10px;border:1px solid #688d01; background:url(/screens/homepage_bannerbg.jpg) no-repeat; background-color:#A5CD14">
 <tr>
 <td  valign="middle" class="headerLinks">
-<!--
 <A accesskey="1" href="/search~S1" style="color:#ffffff;">Home</A> &nbsp;|&nbsp;
 <A href="/search~S1*mao" style="color:#ffffff;">Te Reo</A>&nbsp;|&nbsp;
 <A href="#" onclick="return open_window('http://www.aucklandcitylibraries.com/DigitalLibrary.aspx');" style="color:#ffffff;">Digital Library</A>&nbsp;|&nbsp;
@@ -89,29 +87,15 @@ Your session will expire automatically in <span id=TimeoutSeconds>0</span> secon
 <A onclick="return open_general_help_window('/screens/generalhelp.html#top');" href="#" style="color:#ffffff;">Help</A>&nbsp;|&nbsp;
 <A accesskey="9" onclick="return open_window('http://www.aucklandlibraries.govt.nz/EN/Pages/ContactUs.aspx');" href="#" style="color:#ffffff;">Contact us</A>&nbsp;|&nbsp;
 <A href="http://search.aucklandlibraries.govt.nz/accessible.ashx" style="color:#ffffff;">Text Version</A> 
--->
-
-<!-- BEGIN Encore Header here -->
-
-    <a href="https://discover.elgar.govt.nz/iii/encore/" style="color:#ffffff;">New search</a> &nbsp;|&nbsp;
-    <a href="https://www.aucklandlibraries.govt.nz" style="color:#ffffff;">Website home</a> &nbsp;|&nbsp;
-    <a href="https://www.aucklandlibraries.govt.nz/Pages/locations-and-hours.aspx" style="color:#ffffff;">Locations &amp; hours</a> &nbsp;|&nbsp;
-    <a href="https://www.aucklandlibraries.govt.nz/Pages/history-and-research.aspx" style="color:#ffffff;">History and research</a> &nbsp;|&nbsp;
-    <a href="https://www.aucklandlibraries.govt.nz/Pages/new-and-recommended.aspx" style="color:#ffffff;">New &amp; recommended</a>
-    
-
-<!-- END Encore Header here -->
-
 </td>
 <td width=200 align=right>
-<!-- <A href="/patroninfo~S1"><img src="/screens/login.gif" border=0></A> -->
-<A href="https://discover.elgar.govt.nz/iii/encore/Sdologin?lang=eng&loginReason=doDefault"><img src="/screens/login.gif" border=0></A>
+<A href="/patroninfo~S1"><img src="/screens/login.gif" border=0></A>
 </td>
 </tr>
 </table>
 
 <br clear='all' />
-<div style="display:none"><img src="/search~s1/" width="1" height="1" alt="Cookie Setter" /> </div>
+<div style="display:none"><img src="/search~S1/" width="1" height="1" alt="Cookie Setter" /> </div>
 <br></br>
 <!-- end toplogo.html file -->
 
@@ -270,10 +254,10 @@ formfield.style.border="2px solid #A5CD14"
 <!--
 The hidden template name below overrides the selfreg_template EO; if certain users need a special template, set this input accordingly when you create the version of selfreg.html for those users.
 -->
-
+<!--
 <input type="hidden" name="TemplateName" value="YOUR VALUE">
 <br />
-
+-->
 <span style="font-size:90%;">
 This page allows you to register online as a customer of AUCKLAND LIBRARIES.  You will have limited privileges until you visit a library branch to pick up your library card. Personal identification and proof of address will need to be shown at this time.
 <br /><br />
@@ -736,4 +720,3 @@ pageTracker._trackPageview();
 
 </body>
 </html>
-
