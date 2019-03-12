@@ -3,7 +3,7 @@
 <!-- This File Last Changed: 01 July 2008 -->
 <META HTTP-EQUIV="Pragma" CONTENT="no-cache"><META HTTP-EQUIV="Expires" CONTENT="-1">
 <head>
-<title>PROD - HAYDER TEST - 6</title>
+<title>PROD - EXAMPLE 1</title>
 <base target="_self"/>
 <link rel="stylesheet" type="text/css" href="/scripts/ProStyles.css" />
 <link rel="stylesheet" type="text/css" href="/screens/styles.css" />
@@ -26,8 +26,27 @@
     startTimeout(120000000, "http://www.elgar.govt.nz:80");
 // -->
 </script>
-       
-
+<div id="TimeoutPopup" tabindex="0" class="modal" onkeypress="refreshSession(event)">
+<div class="modal-content">
+Your session will expire automatically in <span id=TimeoutSeconds>0</span> seconds.<br>
+<br>
+<button id="CancelTimeout" onclick="refreshSession()">Continue session</button>
+<button id="DoTimeout" onclick="endSession()">End session now</button></div>
+</div>
+<script type="text/JavaScript" >
+<!-- Hide the JS
+    history.forward();
+    function replaceOrRedraw(new_URL)
+    {
+    if( navigator.appVersion.charAt (0) < '3' )
+    	location = new_URL;
+    else
+    	location.replace (new_URL);
+    return false;
+    }
+    
+    
+// Unhide the JS -->
 </script>
 
 <meta name="verify-v1" content="0ZAXG+9NxbmLbQAsWL+mQMSjRBt0lR/jLx+zYMH0eDk=" />
@@ -251,10 +270,10 @@ formfield.style.border="2px solid #A5CD14"
 <!--
 The hidden template name below overrides the selfreg_template EO; if certain users need a special template, set this input accordingly when you create the version of selfreg.html for those users.
 -->
-
-<input type="hidden" name="TemplateName" value="xxx">
+<!--
+<input type="hidden" name="TemplateName" value="YOUR VALUE">
 <br />
-
+-->
 <span style="font-size:90%;">
 This page allows you to register online as a customer of AUCKLAND LIBRARIES.  You will have limited privileges until you visit a library branch to pick up your library card. Personal identification and proof of address will need to be shown at this time.
 <br /><br />
